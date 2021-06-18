@@ -74,30 +74,41 @@ ul li ul li {
 main {
   display: grid;
   z-index: 50;
+  grid-gap: 1rem;
   height: 50vh;
+  width: 100%;
   position: absolute;
+  background-color: transparent;
   left: 0;
-  top: 1rem;
+  top: 3rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
-  ". . ."
   "abt abt abt"
+  ". . ."
   ". bars bars";
 }
 
 .abt {
   grid-area: abt;
+  margin-top: 3rem;
   margin: 2rem;
+  padding: 1rem;
   text-align: center;
+  background-color: transparent;
   border: 2px solid black;
   border-radius: 5px;
+}
+
+.abt p {
+  margin: 0;
 }
 
 /* ---------- SKILL BARS ---------- */
 
 .bars {
   grid-area: bars;
-  margin-top: 1rem;
+  top: 3rem;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -115,15 +126,15 @@ h4 {
 .progress {
   float: right;
   background-color: #333;
-  border-radius: 20px;
-  height: 30px;
-  width: 300px;
+  border-radius: 30px;
+  height: 50px;
+  width: 350px;
   margin-bottom: 10px;
 }
 
 #bar {
   background-color: #777;
-  border-radius: 20px;
+  border-radius: 30px;
   color: black;
   display: flex;
   align-items: center;
@@ -137,8 +148,8 @@ h4 {
 
 #bar2 {
   background-color: #DCD0FF;
-  border-radius: 20px;
-  margin-top: -40px;
+  border-radius: 30px;
+  margin-top: -60px;
   color: white;
   display: flex;
   align-items: center;
@@ -162,17 +173,59 @@ h4 {
   position: absolute;
   bottom: 0;
   left: 0;
+  height: auto;
   width: 100%;
   object-fit: cover;
+
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (min-width: 1300px) {
+  .portrait video {
+    width: 80%;
+  }
+  /* .abt {
+    font-size: 16px;
+  } */
+}
+
+@media screen and (min-width: 1850px) {
+  .portrait video {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
   main {
     grid-template-areas:
     "abt abt abt"
     ". bars .";
   }
+  .abt {
+    margin: 4rem, 1rem;
+  }
   .progress {
     width: 250px;
+    height: 30px;
+    border-radius: 20px;
+  }
+  #bar {
+    border-radius: 20px;
+  }
+  #bar2 {
+    margin-top: -40px;
+    border-radius: 20px;
+  }
+  .portrait {
+    top: 300px;
+    overflow: hidden;
+  }
+  .portrait video {
+    width: 180%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .portrait {
+    top: 500px;
   }
 }
