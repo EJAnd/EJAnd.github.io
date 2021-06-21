@@ -44,7 +44,7 @@ body {
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(.95);
   background-color: #DCD0FF;
   color: #111;
   overflow: hidden;
