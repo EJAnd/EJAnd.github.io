@@ -1,7 +1,8 @@
 body {
-  background-color: black;
+  background-color: #e4dce7;
   margin: 0;
 }
+
 
 .grid {
   display: grid;
