@@ -9,9 +9,9 @@ body {
 .navbar ul {
   background: #4e2b4b;
   color: #fff;
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
   top: 0;
   left: 0;
   width: 100%;
@@ -19,9 +19,9 @@ body {
 }
 
 .navbar li {
-	display: block;
-	float: left;
-	position: relative;
+  display: block;
+  float: left;
+  position: relative;
   text-align: center;
   width: 25%;
   transition-duration: 0.5s;
@@ -40,13 +40,13 @@ body {
 }
 
 .navbar ul li ul {
-	visibility: hidden;
+  visibility: hidden;
   opacity: 0;
   min-width: 5rem;
-	position: absolute;
+  position: absolute;
   transition: all 0.5s ease;
   margin-top: 47px;
-	left: 0;
+  left: 0;
   display: none;
 }
 
@@ -58,6 +58,6 @@ body {
 }
 
 .navbar ul li ul li {
-	clear: both;
+  clear: both;
   width: inherit;
 }
