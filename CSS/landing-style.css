@@ -76,17 +76,21 @@ main {
   z-index: 50;
   grid-gap: 1rem;
   height: 50vh;
-  width: 100%;
+  max-width: 100%;
+  justify-content: center;
   position: absolute;
   background-color: transparent;
   left: 0;
   top: 3rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-areas:
-  "abt abt abt"
-  ". . ."
-  ". bars bars";
+  ". abt abt abt abt ."
+  ". . . . . ."
+  ". . . bars bars ."
+  ". . . cad cad .";
 }
+
+/* ---------- ABOUT ME ---------- */
 
 .abt {
   grid-area: abt;
@@ -101,6 +105,31 @@ main {
 
 .abt p {
   margin: 0;
+}
+
+/* ---------- LINK PARAGRAPH ---------- */
+
+.cad {
+  grid-area: cad;
+  margin-top: 3rem;
+  margin: 2rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.cad p {
+  margin: 0;
+}
+
+.cad a:link {
+  color: black;
+}
+
+.cad a:visited {
+  color: black;
 }
 
 /* ---------- SKILL BARS ---------- */
@@ -165,6 +194,8 @@ h4 {
   margin-left: 10px;
 }
 
+/* ---------- ME ---------- */
+
 .portrait {
   min-height: 100vh;
   position: relative;
@@ -184,9 +215,6 @@ h4 {
   .portrait video {
     width: 80%;
   }
-  /* .abt {
-    font-size: 16px;
-  } */
 }
 
 @media screen and (min-width: 1850px) {
@@ -195,14 +223,14 @@ h4 {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   main {
     grid-template-areas:
-    "abt abt abt"
-    ". bars .";
+    ". abt abt abt abt ."
+    "bars bars bars cad cad cad";
   }
-  .abt {
-    margin: 4rem, 1rem;
+  .portrait {
+    top: 7rem;
   }
   .progress {
     width: 250px;
@@ -216,8 +244,26 @@ h4 {
     margin-top: -40px;
     border-radius: 20px;
   }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    grid-template-areas:
+    "abt abt abt abt abt abt"
+    ". bars bars bars bars ."
+    "cad cad cad cad cad cad"
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . .";
+  }
+  .cad {
+    margin-bottom: 150px;
+  }
+  .abt {
+    margin: 4rem, 1rem;
+  }
   .portrait {
-    top: 300px;
+    top: 40rem;
     overflow: hidden;
   }
   .portrait video {
@@ -227,6 +273,12 @@ h4 {
 
 @media screen and (max-width: 375px) {
   .portrait {
-    top: 500px;
+    top: 50rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .portrait {
+    top: 60rem;
   }
 }
