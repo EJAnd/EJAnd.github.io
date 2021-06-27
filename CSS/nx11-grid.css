@@ -28,7 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-height: 225px;
+  max-height: 300px;
   border-radius: 4px;
   transition: all 500ms;
   overflow: hidden;
