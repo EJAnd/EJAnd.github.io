@@ -103,8 +103,13 @@ main {
   border-radius: 5px;
 }
 
+.abt h1 {
+	background-color: #e4dce7;
+}
+
 .abt p {
   margin: 0;
+	background-color: #e4dce7;
 }
 
 /* ---------- LINK PARAGRAPH ---------- */
