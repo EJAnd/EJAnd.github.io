@@ -98,18 +98,14 @@ main {
   margin: 2rem;
   padding: 1rem;
   text-align: center;
-  background-color: transparent;
+  color: white;
+  background-color: rgba(85, 60, 143, .75);
   border: 2px solid black;
   border-radius: 5px;
 }
 
-.abt h1 {
-	background-color: #e4dce7;
-}
-
 .abt p {
   margin: 0;
-	background-color: #e4dce7;
 }
 
 /* ---------- LINK PARAGRAPH ---------- */
