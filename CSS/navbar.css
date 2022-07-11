@@ -6,10 +6,11 @@
 }
 
 nav {
+  z-index: 100;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 10vh;
+  min-height: 12vh;
   background-color: #553C8F;
 }
 
@@ -51,7 +52,7 @@ nav {
 }
 
 .navbar ul li ul {
-  z-index: 1;
+  z-index: 100;
 	visibility: hidden;
   opacity: 0;
   min-width: 5rem;
@@ -72,7 +73,7 @@ nav {
   width: 100%;
   opacity: 1;
   display: block;
-  z-index: 10;
+  z-index: 100;
 }
 
 .navbar ul li ul li {
@@ -89,13 +90,14 @@ nav {
     overflow-x: hidden;
   }
   .nav-links {
+    z-index: 100;
     position: absolute;
     right: 0px;
-    height: 75vh;
+    height: 50vh;
     width: 50vw;
     top: 10vh;
     background-color: #553C8F;
-    opacity: 90%;
+    /* opacity: 90%; */
     display: flex;
     flex-direction: column;
     align-items: center;
