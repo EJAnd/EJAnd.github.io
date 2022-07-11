@@ -23,7 +23,7 @@ window.addEventListener("load", () => {
             lon = position.coords.longitude;
             
             // const proxy = 'https://cors-anywhere.herokuapp.com/';
-            const apiUrl = `http://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&appid=` + apiKey;
+            const apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&appid=` + apiKey;
             
             fetchWeather(apiUrl, 'geo');
             
@@ -159,7 +159,7 @@ function displayWeather(data, locationType) {
 function search() {
     let city = document.querySelector('.search-bar').value;
     // const api = `http://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&appid=` + apiKey;
-    let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=`+ apiKey;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=`+ apiKey;
      console.log(apiUrl);
     fetchWeather(apiUrl, "city");
 }
