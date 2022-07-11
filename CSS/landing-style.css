@@ -10,7 +10,7 @@ body {
 
 /* ---------- NAV BAR ---------- */
 
-ul {
+/* ul {
   position: absolute;
   background: #553C8F;
   color: #fff;
@@ -28,7 +28,7 @@ li {
 	float: left;
 	position: relative;
   text-align: center;
-  width: 25%;
+  width: 20%;
   transition-duration: 0.5s;
 }
 
@@ -67,11 +67,12 @@ ul li ul:hover {
 ul li ul li {
 	clear: both;
   width: inherit;
-}
+} */
 
 /* ---------- GRID LAYOUT ---------- */
 
 main {
+  margin-top: 10vh;
   display: grid;
   z-index: 50;
   grid-gap: 1rem;
@@ -123,6 +124,7 @@ main {
 
 .cad p {
   margin: 0;
+  background-color: #e4dce7;
 }
 
 .cad a:link {
@@ -268,7 +270,7 @@ h4 {
     overflow: hidden;
   }
   .portrait video {
-	  position: absolute;
+    position: absolute;
     width: 180%;
   }
 }
