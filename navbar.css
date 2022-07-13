@@ -6,12 +6,15 @@
 }
 
 nav {
-width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   z-index: 100;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 12vh;
+  min-height: 10vh;
   background-color: #553C8F;
 }
 
