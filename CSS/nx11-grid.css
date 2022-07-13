@@ -6,7 +6,7 @@ body {
 .grid {
   display: grid;
   gap: 1rem;
-  margin-top: 3.5rem;
+  margin-top: 12vh;
   height: 100%;
   width: 100%;
   grid-template-areas:
