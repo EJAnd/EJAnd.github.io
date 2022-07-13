@@ -84,6 +84,11 @@ body {
     font-size: 40px;
 }
 
+@media screen and (max-width: 768px) {
+    .btn-div{
+        width: 50vh;
+    }
+}
 /*-------------------MAKE IT RAIN-----------------------*/
 
 .rain {
