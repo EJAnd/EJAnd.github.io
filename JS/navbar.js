@@ -7,10 +7,10 @@ const navSlide = () => {
         //toggle navigation
         nav.classList.toggle('nav-active');
         //Animate link entry
-        navLinks.forEach((link, index) => {
-            link.style.animation = `navLinkFade 0.25s ease forwards ${index/8}s`
-            console.log(index / 8);
-        });
+//         navLinks.forEach((link, index) => {
+//             link.style.animation = `navLinkFade 0.25s ease forwards ${index/8}s`
+//             console.log(index / 8);
+//         });
     });
     
     
