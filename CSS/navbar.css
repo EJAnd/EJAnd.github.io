@@ -83,6 +83,7 @@ nav {
 .navbar ul li ul li {
 	clear: both;
   width: inherit;
+	border-top: solid  #bbb1d2 2px;
 }
 
 .collapse { 
