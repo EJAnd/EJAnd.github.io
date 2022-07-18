@@ -70,6 +70,7 @@ nav {
 .navbar ul li:hover > ul,
 .navbar ul li ul:hover {
   visibility: visible;
+  overflow: visible;
   background-color: #553C8F;
   display: flex;
   justify-content: space-around;
